@@ -1,0 +1,15 @@
+.navbar { 
+    background-color: #c8b88a;
+    padding: 20px;
+} 
+
+.navbar a:link, .navbar a:visited, .navbar a:active { 
+    color: white;
+} 
+#nav-section { 
+    width: 100%;
+    justify-content: center;
+}
+.navbar-collapse { 
+justify-content: end;
+}
