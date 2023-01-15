@@ -1,6 +1,8 @@
+/* Navbar section */
+/* -------------------------------------------------------------------------------------- */
 .navbar { 
     background-color: #c8b88a;
-    padding: 20px;
+    padding: 20px; 
 } 
 
 .navbar a:link, .navbar a:visited, .navbar a:active { 
@@ -12,4 +14,23 @@
 }
 .navbar-collapse { 
 justify-content: end;
+}
+#web-icon { 
+    width: 10%;
+    height: auto;
+} 
+
+/* set media query for navbar */
+/* Body section */
+/* ---------------------------------------------------------------------------------------- */ 
+body { 
+  font-family: serif, sans-serif;
+} 
+
+/* Three recipe cards */
+/* ------------------------------------------------------------------------------------------ */ 
+.recipe-container { 
+    width: 90vh; 
+    height: 25vh; 
+    margin: 20px auto;
 }
