@@ -1,40 +1,72 @@
 /* Navbar section */
 /* -------------------------------------------------------------------------------------- */
-.navbar { 
+.navbar {
     background-color: #c8b88a;
-    padding: 20px; 
-} 
+    padding: 20px;
+}
 
-.navbar a:link, .navbar a:visited, .navbar a:active { 
+.navbar a:link,
+.navbar a:visited,
+.navbar a:active {
     color: white;
-} 
-#nav-section { 
+}
+
+#nav-section {
     width: 100%;
     justify-content: center;
 }
-.navbar-collapse { 
-justify-content: end;
+
+.navbar-collapse {
+    justify-content: end;
 }
-#web-icon { 
+
+#web-icon {
     width: 10%;
     height: auto;
-} 
+}
 
 /* set media query for navbar */
 /* Body section */
-/* ---------------------------------------------------------------------------------------- */ 
-body { 
-  font-family: serif, sans-serif;
-} 
+/* ---------------------------------------------------------------------------------------- */
+body {
+    font-family: serif, sans-serif;
+    background-color: #f6f0cf;
+}
 
 /* Three recipe cards */
-/* ------------------------------------------------------------------------------------------ */ 
-.recipe-of-the-day{ 
-    width: 100%; 
-    height: fit-content; 
+/* ------------------------------------------------------------------------------------------ */
+.recipe-of-the-day {
+    width: 100%;
+    height: fit-content;
     margin: 20px auto;
 }
 
-#meal1, #meal2, #meal3 { 
+.recipe-container {
+    margin-top: 20px;
+    background-image: linear-gradient(45deg, #98CD8D 4.17%, #f6f0cf 4.17%, #f6f0cf 50%, #98CD8D 50%, #98CD8D 54.17%, #f6f0cf 54.17%, #f6f0cf 100%);
+    background-size: 16.97px 16.97px;
+}
+
+#random-meal-head {
+    text-align: center;
+}
+
+#meal1,
+#meal2,
+#meal3 {
     margin: 20px;
+    border: none;
+    position: relative;
+}
+
+#card1-head,
+#card2-head,
+#card3-head {
+    width: 75%;
+    padding: 1px;
+    background-color: hsl(0, 19%, 95%, 0.6);
+    position: absolute;
+    bottom: 5px;
+    right: 10%;
+    right: 10%;
 }
