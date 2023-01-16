@@ -157,6 +157,7 @@ $(document).ready(function () {
                 }
 //some of the array with meals are returning undefined or null results, consider using a nested if function 
 //if array item = null or undefined, return only the defined items/items which are not null or ignore the undefined items
+//use nested if statment
                 
                 
 
