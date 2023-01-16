@@ -29,8 +29,12 @@ body {
 
 /* Three recipe cards */
 /* ------------------------------------------------------------------------------------------ */ 
-.recipe-container { 
-    width: 90vh; 
-    height: 25vh; 
+.recipe-of-the-day{ 
+    width: 100%; 
+    height: fit-content; 
     margin: 20px auto;
+}
+
+#meal1, #meal2, #meal3 { 
+    margin: 20px;
 }
