@@ -44,8 +44,13 @@ $(document).ready(function () {
                 //assign each card an image
                 meal1img.attr("src", card1Img);
                 meal2img.attr("src", card2Img);
-                meal3img.attr("src", card3Img);
-                //find a way to prevent random number generator from selecting same value or same array item
+                meal3img.attr("src", card3Img); 
+
+                //find a way to prevent random number generator from selecting same value or same array item 
+                //if meal respone array length >3, use random array for all 3 meals, 
+                //if meal array length = 3, use meal[0], meal[1] and meal[2]
+                //if meal array length =2, asign only the 1st and third card with a meal , middle card has a place holder
+                //if meal array length =1, asign it to the middle card, and cards on the other side have place holder
 
 
              })
