@@ -156,7 +156,7 @@ $(document).ready(function () {
                     meal2img.attr("src", card1Img);
                 }
 //some of the array with meals are returning undefined or null results, consider using a nested if function 
-//if array item = null or undefined, return only the defined items or ignore the undefined items
+//if array item = null or undefined, return only the defined items/items which are not null or ignore the undefined items
                 
                 
 
