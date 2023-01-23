@@ -2,7 +2,8 @@ $(document).ready(function () {
     function getRandom(arr) {
         let random = arr[Math.floor(Math.random() * arr.length)];
         return random;
-    }
+    }; 
+
     function chooseProtein() {
         var proteins = ["Chicken", "Lamb", "Beef", "Tofu", "Pork", "Lentils", "Salmon", "Sardines"];
         var proteinChoice = getRandom(proteins);
@@ -15,6 +16,9 @@ $(document).ready(function () {
             .then(function (response) {
                 var mealSelection = response.meals;
                 console.log(mealSelection);
+                var mealID1;
+                var mealID2;
+                var mealID3;
 
                 //find a way to prevent random number generator from selecting same value or same array item 
                 //if meal respone array length >3, use random array for all 3 meals, 
@@ -22,6 +26,13 @@ $(document).ready(function () {
                     var meal1 = getRandom(mealSelection);
                     var meal2 = getRandom(mealSelection);
                     var meal3 = getRandom(mealSelection);
+                    //store IDs 
+                    mealID1 = meal1.idMeal; 
+                    mealID2 = meal2.idMeal; 
+                    mealID3 = meal3.idMeal; 
+                    console.log("mealID 1: " + mealID1);
+                    console.log("mealID 2: " + mealID2);
+                    console.log("mealID 3: " + mealID3);
                     console.log(meal1);
                     console.log(meal2);
                     console.log(meal3);
@@ -32,7 +43,7 @@ $(document).ready(function () {
                     //select names of 3 meals
                     var meal1Name = meal1.strMeal;
                     var meal2Name = meal2.strMeal;
-                    var meal3Name = meal3.strMeal;
+                    var meal3Name = meal3.strMeal; 
                     //asign each card a meal name
                     card1Head.text(meal1Name);
                     card2Head.text(meal2Name);
@@ -58,6 +69,10 @@ $(document).ready(function () {
                         var meal2 = mealSelection[1];
                         console.log(meal1);
                         console.log(meal2);
+                        //Store meal ID 
+                        mealID1 = meal1.idMeal; 
+                        mealID2 = meal2.idMeal; 
+                        //select card
                         var card1Head = $("#card1-head");
                         var card3Head = $("#card3-head");
                         //select names of 2 meals
@@ -82,9 +97,14 @@ $(document).ready(function () {
                     var meal1 = mealSelection[0];
                     var meal2 = mealSelection[1];
                     var meal3 = mealSelection[2];
+                    //store meal ID
+                    mealID1 = meal1.idMeal; 
+                    mealID2 = meal2.idMeal; 
+                    mealID3 = meal3.idMeal; 
                     console.log(meal1);
                     console.log(meal2);
                     console.log(meal3);
+                    //select card head
                     var card1Head = $("#card1-head");
                     var card2Head = $("#card2-head");
                     var card3Head = $("#card3-head");
@@ -117,6 +137,10 @@ $(document).ready(function () {
                     var meal2 = mealSelection[1];
                     console.log(meal1);
                     console.log(meal2);
+                     //store IDs 
+                     mealID1 = meal1.idMeal; 
+                     mealID2 = meal2.idMeal; 
+                     //select card header
                     var card1Head = $("#card1-head");
                     var card3Head = $("#card3-head");
                     //select names of 2 meals
