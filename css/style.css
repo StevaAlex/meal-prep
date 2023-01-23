@@ -57,6 +57,7 @@ body {
     margin: 20px;
     border: none;
     position: relative;
+    padding: 0; 
 }
 
 #card1-head,
@@ -69,4 +70,6 @@ body {
     bottom: 5px;
     right: 10%;
     right: 10%;
-}
+    text-align: center;
+} 
+
