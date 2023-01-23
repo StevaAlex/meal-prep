@@ -30,9 +30,9 @@ $(document).ready(function () {
                     mealID1 = meal1.idMeal; 
                     mealID2 = meal2.idMeal; 
                     mealID3 = meal3.idMeal; 
-                    console.log("mealID 1: " + mealID1);
-                    console.log("mealID 2: " + mealID2);
-                    console.log("mealID 3: " + mealID3);
+                    localStorage.setItem("mealID1", mealID1);
+                    localStorage.setItem("mealID2", mealID2);
+                    localStorage.setItem("mealID3", mealID3);
                     console.log(meal1);
                     console.log(meal2);
                     console.log(meal3);
@@ -72,6 +72,8 @@ $(document).ready(function () {
                         //Store meal ID 
                         mealID1 = meal1.idMeal; 
                         mealID2 = meal2.idMeal; 
+                        localStorage.setItem("mealID1", mealID1);
+                        localStorage.setItem("mealID2", mealID2);
                         //select card
                         var card1Head = $("#card1-head");
                         var card3Head = $("#card3-head");
@@ -101,6 +103,9 @@ $(document).ready(function () {
                     mealID1 = meal1.idMeal; 
                     mealID2 = meal2.idMeal; 
                     mealID3 = meal3.idMeal; 
+                    localStorage.setItem("mealID1", mealID1);
+                    localStorage.setItem("mealID2", mealID2);
+                    localStorage.setItem("mealID3", mealID3);
                     console.log(meal1);
                     console.log(meal2);
                     console.log(meal3);
@@ -140,6 +145,8 @@ $(document).ready(function () {
                      //store IDs 
                      mealID1 = meal1.idMeal; 
                      mealID2 = meal2.idMeal; 
+                     localStorage.setItem("mealID1", mealID1);
+                     localStorage.setItem("mealID2", mealID2);
                      //select card header
                     var card1Head = $("#card1-head");
                     var card3Head = $("#card3-head");
